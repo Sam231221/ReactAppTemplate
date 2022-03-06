@@ -1,0 +1,20 @@
+project_name
+    >node_modules
+    >public
+    >src
+          >Components
+                >header
+                      header.css
+                      header.jsx
+                >about
+                      about.css
+                      about.jsx
+                >footer
+                      footer.css
+                      footer.jsx      
+            >img   
+                >header                    
+    .gitignore
+    package-lock.json
+    package.json
+    README.md
