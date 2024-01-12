@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "name": "Sameer",
+      "username": "ProgrammerSam@347",
+      "email": "samirshahi9882@gmail.com",
+      "address": {
+        "street": "Machhapuchre Tole-3",
+        "city": "Pokhara-7",
+        "zipcode": "33700"
+      },
+      "id": 1
+    },
+    {
+      "name": "xzczxc",
+      "username": "AXSAX",
+      "email": "samirshahi9882@gmail.com",
+      "address": {
+        "street": "Machhapuchre Tole-3",
+        "city": "Pokhara",
+        "zipcode": "3423"
+      },
+      "id": 2
+    },
+    {
+      "name": "dwerwe",
+      "username": "sss",
+      "email": "sameershahithakuri123@gmail.com",
+      "address": {
+        "street": "Bagar",
+        "city": "Pokhara",
+        "zipcode": "33700"
+      },
+      "id": 3
+    },
+    {
+      "name": "dwerwe",
+      "username": "sss",
+      "email": "sameershahithakuri123@gmail.com",
+      "address": {
+        "street": "Bagar",
+        "city": "Pokhara",
+        "zipcode": "33700"
+      },
+      "id": 4
+    }
+  ]
+}
