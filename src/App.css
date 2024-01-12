@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-default);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --primaryBgColor: #fff;
+  --secondaryBgColor: #f7f7f9;
+  --ternaryBgColor: #f4f4f4;
+  --forteryBgColor: #f0f3f8;
+  --boxShadowColor: rgba(0, 0, 0, 0.1);
+  --primaryTextColor: #000000eb;
+  --LinkColor: #00000099;
+  --LinkHoverColor: #000000e3;
+  --primaryHeadingColor: #151515;
+  --secondaryHeadingColor: #444444;
+  --primaryParagraphColor: #555555;
+  --secondaryParagraphColor: #444444;
+
+  --cardBgColor: #f7f7f9;
+  --skeletonBaseColor: #efefef;
+  --skeletonHighlightColor: #dddddd;
+
+  --sectionTitleColor: #0b5ed7;
+  --secondaryHoverColor: #000;
+  --primaryBtnBgColor: #0b5ed7;
+  --primaryBtnTextColor: #ffffff;
+  --primaryBtnBgHoverColor: #24a2dc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+[data-theme="dark"] {
+  --primaryBgColor: #000;
+  --secondaryBgColor: #121212;
+  --ternaryBgColor: #151515;
+  --forteryBgColor: #191818;
+  --boxShadowColor: rgba(47 45 46 / 64%);
+  --primaryTextColor: #f0f0f0;
+  --LinkColor: #b1b1b1;
+  --LinkHoverColor: #f0f0f0;
 
-.card {
-  padding: 2em;
-}
+  --primaryHeadingColor: #e6e6e6;
+  --cardBgColor: #0e0e0e;
+  --skeletonBaseColor: #1f1f1f;
+  --skeletonHighlightColor: #4a4a4a;
 
-.read-the-docs {
-  color: #888;
+  --secondaryHeadingColor: #cdcdcd;
+  --primaryParagraphColor: #dbdbdb;
+  --secondaryParagraphColor: #b8b8b8;
+  --sectionTitleColor: #0b5ed7;
+  --secondaryHoverColor: #000;
+  --primaryBtnBgColor: #0b5ed7;
+  --primaryBtnTextColor: #ffffff;
+  --primaryBtnBgHoverColor: #24a2dc;
+}
+/*Adjust the media queries where layou begins to fail.*/
+@media screen and (max-width: 561px) {
+  /* section {
+
+  } */
 }

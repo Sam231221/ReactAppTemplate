@@ -1,0 +1,44 @@
+.toggler {
+  position: relative;
+  display: inline-block;
+  color: var(--primaryTextColor);
+}
+
+.toggleOptions {
+  background-color: var(--primaryBgColor);
+  position: absolute;
+  display: flex;
+  box-shadow: 1px 2px 14px var(--boxShadowColor);
+  flex-direction: column;
+  top: 45px;
+  color: var(--primaryTextColor);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.toggleOptions li {
+  min-width: 100px;
+}
+
+.toggleOptions li svg {
+  pointer-events: none;
+}
+
+.toggleOptions li:hover {
+  background-color: var(--secondaryBgColor);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .toggleOptions {
+    top: 60px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .toggleOptions {
+    top: 70px;
+    right: 20px;
+  }
+}
