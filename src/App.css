@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   scroll-behavior: smooth;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -10,63 +13,120 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--color-default);
 }
 
-:root {
-  --primaryBgColor: #272121;
-  --secondaryBgColor: #f7f7f9;
-  --ternaryBgColor: #f4f4f4;
-  --forteryBgColor: #f0f3f8;
-  --boxShadowColor: rgba(0, 0, 0, 0.1);
-  --primaryTextColor: #000000eb;
-  --LinkColor: #00000099;
-  --LinkHoverColor: #000000e3;
-  --primaryHeadingColor: #151515;
-  --secondaryHeadingColor: #444444;
-  --primaryParagraphColor: #555555;
-  --secondaryParagraphColor: #444444;
-
-  --cardBgColor: #f7f7f9;
-  --skeletonBaseColor: #efefef;
-  --skeletonHighlightColor: #dddddd;
-
-  --sectionTitleColor: #0b5ed7;
-  --secondaryHoverColor: #000;
-  --primaryBtnBgColor: #0b5ed7;
-  --primaryBtnTextColor: #ffffff;
-  --primaryBtnBgHoverColor: #24a2dc;
+html,
+body {
+  height: 100vh;
 }
 
-[data-theme="dark"] {
-  --primaryBgColor: #000;
-  --secondaryBgColor: #121212;
-  --ternaryBgColor: #151515;
-  --forteryBgColor: #191818;
-  --boxShadowColor: rgba(47 45 46 / 64%);
-  --primaryTextColor: #f0f0f0;
-  --LinkColor: #b1b1b1;
-  --LinkHoverColor: #f0f0f0;
-
-  --primaryHeadingColor: #e6e6e6;
-  --cardBgColor: #0e0e0e;
-  --skeletonBaseColor: #1f1f1f;
-  --skeletonHighlightColor: #4a4a4a;
-
-  --secondaryHeadingColor: #cdcdcd;
-  --primaryParagraphColor: #dbdbdb;
-  --secondaryParagraphColor: #b8b8b8;
-  --sectionTitleColor: #0b5ed7;
-  --secondaryHoverColor: #000;
-  --primaryBtnBgColor: #0b5ed7;
-  --primaryBtnTextColor: #ffffff;
-  --primaryBtnBgHoverColor: #24a2dc;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: light) {
+/* 
+R (0)
+G (110)
+B (255 */
+
+@layer base {
   :root {
-    /* color: #213547;
-    background-color: #ffffff; */
+    --background: 216 100% 98.04%;
+    --foreground: 213.6 100% 4.9%;
+
+    --primary: 214.12 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --card: 216 100% 98.04%;
+    --card-foreground: 213.6 100% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213.6 100% 4.9%;
+
+    --secondary: 214.74 100% 92.55%;
+    --secondary-foreground: 216 100% 0.98%;
+
+    --muted: 213.6 100% 95.1%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 213.6 100% 95.1%;
+    --accent-foreground: 214.12 100% 50%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90.2%;
+    --input: 0 0% 90.2%;
+    --ring: 214.12 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: linear-gradient(to top left, #007adf, #00ecbc);
+
+    --background: 220 65% 3.52%;
+    --foreground: 220 10% 97.2%;
+
+    --muted: 220 50% 13.2%;
+    --muted-foreground: 220 10% 54.4%;
+
+    --popover: 220 45% 5.72%;
+    --popover-foreground: 220 10% 97.2%;
+
+    --card: 220 45% 5.72%;
+    --card-foreground: 220 10% 97.2%;
+
+    --border: 220 50% 13.2%;
+    --input: 220 50% 13.2%;
+
+    --primary: 220 100% 44%;
+    --primary-foreground: 220 10% 97.2%;
+
+    --secondary: 220 50% 13.2%;
+    --secondary-foreground: 220 10% 97.2%;
+
+    --accent: 220 50% 13.2%;
+    --accent-foreground: 220 10% 97.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 10% 97.2%;
+
+    --ring: 220 100% 44%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+.dotPattern {
+  background-image: radial-gradient(rgb(35, 40, 68) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.use-automation-zoom-in {
+  animation: automation-zoom-in 0.5s;
+}
+
+@keyframes automation-zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
