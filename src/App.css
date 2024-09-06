@@ -1,5 +1,11 @@
 :root {
   scroll-behavior: smooth;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -8,7 +14,7 @@ body {
 }
 
 :root {
-  --primaryBgColor: #fff;
+  --primaryBgColor: #272121;
   --secondaryBgColor: #f7f7f9;
   --ternaryBgColor: #f4f4f4;
   --forteryBgColor: #f0f3f8;
@@ -56,6 +62,14 @@ body {
   --primaryBtnTextColor: #ffffff;
   --primaryBtnBgHoverColor: #24a2dc;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* color: #213547;
+    background-color: #ffffff; */
+  }
+}
+
 /*Adjust the media queries where layou begins to fail.*/
 @media screen and (max-width: 561px) {
   /* section {
