@@ -1,8 +1,4 @@
-import React from "react";
-
-const Home = React.lazy(() => import("../pages/Home"));
-const NotFound = React.lazy(() => import("../pages/NotFound"));
-const Register = React.lazy(() => import("../pages/Register"));
+import { Home, NotFound, Register } from "../pages";
 
 const routes = [
   {

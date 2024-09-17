@@ -9,7 +9,7 @@ import {
   deleteUser,
 } from "../redux/reducers/users/userSlice";
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();
   const users = useSelector((state: RootState) => state.users.users);
   const [name, setName] = useState("");
@@ -106,4 +106,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Home;
